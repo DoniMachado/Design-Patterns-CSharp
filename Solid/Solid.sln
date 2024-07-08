@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liskov.Substitution.Princip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface.Segregation.Principle.ISP", "Interface.Segregation.Principle.ISP\Interface.Segregation.Principle.ISP.csproj", "{AD532455-83E2-4B92-84F6-04D5ADA62FB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency.Inversion.Principle.DIP", "Dependency.Inversion.Principle.DIP\Dependency.Inversion.Principle.DIP.csproj", "{59293792-B304-4253-825F-C4E828A0CE1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AD532455-83E2-4B92-84F6-04D5ADA62FB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD532455-83E2-4B92-84F6-04D5ADA62FB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD532455-83E2-4B92-84F6-04D5ADA62FB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59293792-B304-4253-825F-C4E828A0CE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59293792-B304-4253-825F-C4E828A0CE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59293792-B304-4253-825F-C4E828A0CE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59293792-B304-4253-825F-C4E828A0CE1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
