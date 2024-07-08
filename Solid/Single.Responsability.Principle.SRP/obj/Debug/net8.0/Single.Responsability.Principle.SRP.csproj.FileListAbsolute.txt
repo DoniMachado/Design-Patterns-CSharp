@@ -1,0 +1,15 @@
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\bin\Debug\net8.0\Single.Responsability.Principle.SRP.exe
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\bin\Debug\net8.0\Single.Responsability.Principle.SRP.deps.json
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\bin\Debug\net8.0\Single.Responsability.Principle.SRP.runtimeconfig.json
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\bin\Debug\net8.0\Single.Responsability.Principle.SRP.dll
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\bin\Debug\net8.0\Single.Responsability.Principle.SRP.pdb
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.AssemblyInfoInputs.cache
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.AssemblyInfo.cs
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.csproj.CoreCompileInputs.cache
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.sourcelink.json
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.dll
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\refint\Single.Responsability.Principle.SRP.dll
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.pdb
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\Single.Responsability.Principle.SRP.genruntimeconfig.cache
+C:\Users\Luis Felipe\Documents\GitHub\Design-Patterns-CSharp\Solid\Single.Responsability.Principle.SRP\obj\Debug\net8.0\ref\Single.Responsability.Principle.SRP.dll
