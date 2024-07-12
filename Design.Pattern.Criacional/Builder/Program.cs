@@ -77,6 +77,16 @@ abstract class VehicleBuilder
     public abstract void BuildEngine();
     public abstract void BuildWheels();
     public abstract void BuildDoors();
+    public abstract void Reset();
+
+    public Vehicle GetProductAndReset()
+    {
+        Vehicle v = this.vehicle;
+        Reset();
+        return v;
+    }
+
+
 }
 
 /// <summary>
@@ -108,6 +118,11 @@ class MotorCycleBuilder : VehicleBuilder
     public override void BuildDoors()
     {
         vehicle["doors"] = "0";
+    }
+
+    public override void Reset()
+    {
+        vehicle = new Vehicle("MotorCycle");
     }
 }
 
@@ -141,6 +156,11 @@ class CarBuilder : VehicleBuilder
     {
         vehicle["doors"] = "4";
     }
+
+    public override void Reset()
+    {
+        vehicle = new Vehicle("Car");
+    }
 }
 
 /// <summary>
@@ -172,6 +192,11 @@ class ScooterBuilder : VehicleBuilder
     public override void BuildDoors()
     {
         vehicle["doors"] = "0";
+    }
+
+    public override void Reset()
+    {
+        vehicle = new Vehicle("Scooter");
     }
 }
 
