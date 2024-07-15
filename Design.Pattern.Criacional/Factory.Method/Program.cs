@@ -1,169 +1,87 @@
 ﻿namespace Design.Pattern.Criacional.Factory.Method;
 
-/// <summary>
-/// MainApp startup class for Real-World 
-/// Factory Method Design Pattern.
-/// </summary>
+
+public interface ICustomer
+{
+    void AddPoints();
+    void AddDiscount();
+}
+
+public class GoldCustomer : ICustomer
+{
+    public void AddPoints()
+    {
+        Console.WriteLine("Gold Customer - Points Added");
+    }
+
+    public void AddDiscount()
+    {
+        Console.WriteLine("Gold Customer - Discount Added");
+    }
+
+    public void GoldOperation()
+    {
+        Console.WriteLine("Operation specific to Gold Customer");
+    }
+}
+
+public class SilverCustomer : ICustomer
+{
+    public void AddPoints()
+    {
+        Console.WriteLine("Silver Customer -  Points Added");
+    }
+
+    public void AddDiscount()
+    {
+        Console.WriteLine("Silver Customer - Discount Added");
+    }
+
+    public void SilverOperation()
+    {
+        Console.WriteLine("Operation specific to Silver Customer");
+    }
+}
+
+public abstract class BaseCustomerFactory
+{
+    public ICustomer GetCustomer()
+    {
+        ICustomer myCust = this.CreateCustomer();
+        myCust.AddPoints();
+        myCust.AddDiscount();
+        return myCust;
+    }
+    public abstract ICustomer CreateCustomer();
+}
+
+public class GoldCustomerFactory : BaseCustomerFactory
+{
+    public override ICustomer CreateCustomer()
+    {
+        GoldCustomer objCust = new GoldCustomer();
+        objCust.GoldOperation();
+        return objCust;
+    }
+}
+public class SilverCustomerFactory : BaseCustomerFactory
+{
+    public override ICustomer CreateCustomer()
+    {
+        SilverCustomer objCust = new SilverCustomer();
+        objCust.SilverOperation();
+        return objCust;
+    }
+}
 
 class MainApp
 {
-    /// <summary>
-    /// Entry point into console application.
-    /// </summary>
-
-    static void Main()
+    public static void Main()
     {
-        // Note: constructors call Factory Method
-
-        Document[] documents = new Document[2];
-
-        documents[0] = new Resume();
-        documents[1] = new Report();
-
-        // Display document pages
-
-        foreach (Document document in documents)
-        {
-            Console.WriteLine("\n" + document.GetType().Name + "--");
-            foreach (Page page in document.Pages)
-            {
-                Console.WriteLine(" " + page.GetType().Name);
-            }
-        }
-
-        // Wait for user
-
-        Console.ReadKey();
-    }
-}
-
-/// <summary>
-/// The 'Product' abstract class
-/// </summary>
-
-abstract class Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class SkillsPage : Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class EducationPage : Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class ExperiencePage : Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class IntroductionPage : Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class ResultsPage : Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class ConclusionPage : Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class SummaryPage : Page
-{
-}
-
-/// <summary>
-/// A 'ConcreteProduct' class
-/// </summary>
-
-class BibliographyPage : Page
-{
-}
-
-/// <summary>
-/// The 'Creator' abstract class
-/// </summary>
-
-abstract class Document
-{
-    private List<Page> _pages = new List<Page>();
-
-    // Constructor calls abstract Factory method
-
-    public Document()
-    {
-        this.CreatePages();
+        //Client Code
+        BaseCustomerFactory c = new GoldCustomerFactory();// Or new SilverCustomerFactory();
+        ICustomer objCust = c.GetCustomer();
     }
 
-    public List<Page> Pages
-    {
-        get { return _pages; }
-    }
-
-    // Factory Method
-
-    public abstract void CreatePages();
 }
 
-/// <summary>
-/// A 'ConcreteCreator' class
-/// </summary>
-
-class Resume : Document
-{
-    // Factory Method implementation
-
-    public override void CreatePages()
-    {
-        Pages.Add(new SkillsPage());
-        Pages.Add(new EducationPage());
-        Pages.Add(new ExperiencePage());
-    }
-}
-
-/// <summary>
-/// A 'ConcreteCreator' class
-/// </summary>
-
-class Report : Document
-{
-    // Factory Method implementation
-
-    public override void CreatePages()
-    {
-        Pages.Add(new IntroductionPage());
-        Pages.Add(new ResultsPage());
-        Pages.Add(new ConclusionPage());
-        Pages.Add(new SummaryPage());
-        Pages.Add(new BibliographyPage());
-    }
-}

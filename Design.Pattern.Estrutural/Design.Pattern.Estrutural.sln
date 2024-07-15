@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{28956CD0-4539-4A34-A2D3-598EE300E94D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{28956CD0-4539-4A34-A2D3-598EE300E94D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{8F60120D-0620-499B-8EF6-69A63B49335E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{28956CD0-4539-4A34-A2D3-598EE300E94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28956CD0-4539-4A34-A2D3-598EE300E94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28956CD0-4539-4A34-A2D3-598EE300E94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F60120D-0620-499B-8EF6-69A63B49335E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F60120D-0620-499B-8EF6-69A63B49335E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F60120D-0620-499B-8EF6-69A63B49335E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F60120D-0620-499B-8EF6-69A63B49335E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
